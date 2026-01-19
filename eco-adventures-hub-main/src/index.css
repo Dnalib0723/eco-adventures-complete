@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Warm nature-inspired palette */
+    --background: 45 30% 97%;
+    --foreground: 30 20% 20%;
+
+    --card: 45 40% 99%;
+    --card-foreground: 30 20% 20%;
+
+    --popover: 45 40% 99%;
+    --popover-foreground: 30 20% 20%;
+
+    /* Forest green primary */
+    --primary: 142 35% 35%;
+    --primary-foreground: 45 30% 97%;
+
+    /* Warm beige secondary */
+    --secondary: 38 35% 92%;
+    --secondary-foreground: 30 20% 25%;
+
+    /* Soft sage muted */
+    --muted: 120 15% 92%;
+    --muted-foreground: 30 15% 45%;
+
+    /* Leaf green accent */
+    --accent: 95 40% 45%;
+    --accent-foreground: 45 30% 97%;
+
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 45 30% 97%;
+
+    --border: 38 25% 85%;
+    --input: 38 25% 88%;
+    --ring: 142 35% 35%;
+
+    --radius: 1rem;
+
+    /* Custom nature colors */
+    --leaf: 95 50% 42%;
+    --forest: 142 40% 32%;
+    --earth: 30 35% 45%;
+    --cream: 45 45% 95%;
+    --moss: 100 25% 75%;
+    --bark: 25 30% 35%;
+    --sunshine: 45 85% 70%;
+
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(142 35% 35%), hsl(95 40% 45%));
+    --gradient-warm: linear-gradient(135deg, hsl(45 45% 95%), hsl(38 35% 92%));
+    --gradient-forest: linear-gradient(180deg, hsl(142 35% 35%) 0%, hsl(142 40% 28%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(30 20% 20% / 0.08);
+    --shadow-card: 0 8px 30px -8px hsl(30 20% 20% / 0.1);
+    --shadow-hover: 0 12px 40px -12px hsl(142 35% 35% / 0.2);
+
+    --sidebar-background: 45 30% 97%;
+    --sidebar-foreground: 30 20% 20%;
+    --sidebar-primary: 142 35% 35%;
+    --sidebar-primary-foreground: 45 30% 97%;
+    --sidebar-accent: 38 35% 92%;
+    --sidebar-accent-foreground: 30 20% 25%;
+    --sidebar-border: 38 25% 85%;
+    --sidebar-ring: 142 35% 35%;
+  }
+
+  .dark {
+    --background: 30 15% 12%;
+    --foreground: 45 25% 92%;
+
+    --card: 30 15% 15%;
+    --card-foreground: 45 25% 92%;
+
+    --popover: 30 15% 15%;
+    --popover-foreground: 45 25% 92%;
+
+    --primary: 142 40% 50%;
+    --primary-foreground: 30 15% 10%;
+
+    --secondary: 30 20% 20%;
+    --secondary-foreground: 45 25% 92%;
+
+    --muted: 30 15% 22%;
+    --muted-foreground: 45 15% 60%;
+
+    --accent: 95 45% 50%;
+    --accent-foreground: 30 15% 10%;
+
+    --destructive: 0 60% 45%;
+    --destructive-foreground: 45 25% 92%;
+
+    --border: 30 15% 25%;
+    --input: 30 15% 25%;
+    --ring: 142 40% 50%;
+
+    --sidebar-background: 30 15% 12%;
+    --sidebar-foreground: 45 25% 92%;
+    --sidebar-primary: 142 40% 50%;
+    --sidebar-primary-foreground: 30 15% 10%;
+    --sidebar-accent: 30 20% 20%;
+    --sidebar-accent-foreground: 45 25% 92%;
+    --sidebar-border: 30 15% 25%;
+    --sidebar-ring: 142 40% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .nature-card {
+    @apply bg-card rounded-2xl shadow-soft border border-border/50 transition-all duration-300;
+  }
+
+  .nature-card:hover {
+    @apply shadow-hover -translate-y-1;
+  }
+
+  .gradient-nature {
+    background: var(--gradient-nature);
+  }
+
+  .gradient-warm {
+    background: var(--gradient-warm);
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent;
+    background: var(--gradient-nature);
+  }
+
+  .btn-nature {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300;
+    @apply bg-primary text-primary-foreground;
+    @apply hover:shadow-hover hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-nature-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-full font-medium transition-all duration-300;
+    @apply border-2 border-primary text-primary bg-transparent;
+    @apply hover:bg-primary hover:text-primary-foreground;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24 px-4 md:px-8;
+  }
+
+  .container-nature {
+    @apply max-w-7xl mx-auto;
+  }
+}
+
+@layer utilities {
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+}
