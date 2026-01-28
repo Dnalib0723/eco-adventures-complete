@@ -1,15 +1,15 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+﻿import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const contactInfo = [
   {
     icon: MapPin,
     label: "地址",
-    value: "新竹縣竹北市環境路 123 號",
+    value: "臺東縣臺東市博愛路 527 號",
   },
   {
     icon: Phone,
     label: "電話",
-    value: "03-1234-5678",
+    value: "089-221-999",
   },
   {
     icon: Mail,
