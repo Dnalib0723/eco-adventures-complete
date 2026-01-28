@@ -3,8 +3,8 @@
 const features = [
   {
     icon: Leaf,
-    title: "親近自然",
-    description: "帶領民眾走入自然，認識生態與環境資源",
+    title: "美質生活",
+    description: "關注公共空間與生活環境品質，打造乾淨、舒適的友善環境",
   },
   {
     icon: Heart,
