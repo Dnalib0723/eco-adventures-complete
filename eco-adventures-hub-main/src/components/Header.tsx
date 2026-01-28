@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { Menu, X, Leaf } from "lucide-react";
 
 const Header = () => {
@@ -22,7 +22,7 @@ const Header = () => {
               <Leaf className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="font-semibold text-lg text-foreground hidden sm:block">
-              新竹縣環境教育網
+              臺東縣美質環境資訊網
             </span>
           </a>
 

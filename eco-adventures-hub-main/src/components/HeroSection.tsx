@@ -1,4 +1,4 @@
-import heroImage from "@/assets/hero-nature.jpg";
+﻿import heroImage from "@/assets/hero-nature.jpg";
 import { ChevronDown } from "lucide-react";
 
 const HeroSection = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="max-w-3xl mx-auto bg-background/80 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-card">
           <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 animate-fade-in leading-tight">
             歡迎來到
-            <span className="block text-primary mt-2">新竹縣環境教育網</span>
+            <span className="block text-primary mt-2">臺東縣美質環境資訊網</span>
           </h1>
           
           <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in opacity-0 [animation-delay:200ms] leading-relaxed">
