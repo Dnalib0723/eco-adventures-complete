@@ -70,7 +70,7 @@ const CoursesSection = () => {
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             每一場課程皆強調學習趣味性與實際參與感，
-            讓美質環境教育成為一件輕鬆、有趣又有意義的事情。
+            讓美質生活成為一件輕鬆、有趣又有意義的事情。
           </p>
         </div>
 
