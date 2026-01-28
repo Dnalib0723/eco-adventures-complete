@@ -3,7 +3,7 @@
 const features = [
   {
     icon: Leaf,
-    title: "親近自然",
+    title: "美質生活",
     description: "帶領民眾走入自然，認識生態與環境資源",
   },
   {
