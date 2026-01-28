@@ -1,0 +1,20 @@
+name: Keep Backend Alive
+
+on:
+  schedule:
+    - cron: '*/14 * * * *'
+  workflow_dispatch:
+
+jobs:
+  ping-backend:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wake up backend
+        run: |
+          echo "Waking up backend..."
+          curl https://eco-adventures-backend.onrender.com/ || true
+          echo "Waiting 20 seconds for cold start..."
+          sleep 20
+          echo "Checking backend status..."
+          curl https://eco-adventures-backend.onrender.com/
+          echo "Backend is running!"
