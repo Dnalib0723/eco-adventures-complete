@@ -1,25 +1,30 @@
-﻿import { Leaf, Heart, Users, Sparkles } from "lucide-react";
+﻿import { ShieldCheck, Droplets, Bug, CigaretteOff, TreePine } from "lucide-react";
 
 const features = [
   {
-    icon: Leaf,
-    title: "美質生活",
-    description: "關注公共空間與生活環境品質，打造乾淨、舒適的友善環境",
+    icon: ShieldCheck,
+    title: "環境衛生推動",
+    description: "推動環境衛生相關政策與措施",
   },
   {
-    icon: Heart,
-    title: "環境守護",
-    description: "透過互動與實作，加深環境保護觀念",
+    icon: Droplets,
+    title: "公廁管理",
+    description: "管理與維護公共廁所設施",
   },
   {
-    icon: Users,
-    title: "專業師資",
-    description: "邀請專業講師分享環境知識與實務經驗",
+    icon: Bug,
+    title: "登革熱防治",
+    description: "防治登革熱疫情，保護民眾健康",
   },
   {
-    icon: Sparkles,
-    title: "寓教於樂",
-    description: "讓環境教育成為一件輕鬆、有趣又有意義的事",
+    icon: CigaretteOff,
+    title: "菸蒂減量",
+    description: "推動菸蒂減量，維護環境整潔",
+  },
+  {
+    icon: TreePine,
+    title: "環境維護",
+    description: "維護公共環境設施與品質",
   },
 ];
 
@@ -37,12 +42,12 @@ const AboutSection = () => {
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mt-4">
             透過溫暖、友善且容易使用的網站設計，
-            希望讓每一位對環境、生態與永續議題有興趣的民眾，
+            希望讓每一位對環境、衛生與永續議題有興趣的民眾，
             都能輕鬆找到適合自己的課程，並實際參與環境行動。
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {features.map((feature, index) => (
             <div
               key={feature.title}
