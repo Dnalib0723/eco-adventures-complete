@@ -7,7 +7,7 @@ const Header = () => {
   const navLinks = [
     { href: "#about", label: "關於我們" },
     { href: "#courses", label: "近期課程" },
-    { href: "#past-activities", label: "過去活動" },
+    { href: "#instructors", label: "美質地圖" },
     { href: "#faq", label: "常見問題" },
     { href: "#contact", label: "聯絡我們" },
   ];
