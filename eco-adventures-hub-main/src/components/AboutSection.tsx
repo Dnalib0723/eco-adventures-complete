@@ -3,7 +3,7 @@
 const features = [
   {
     icon: ShieldCheck,
-    title: "環境衛生推動",
+    title: "環境衛生促進",
     description: "推動環境衛生相關政策與措施",
   },
   {
