@@ -25,7 +25,7 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground mb-8 animate-fade-in opacity-0 [animation-delay:200ms] leading-relaxed">
             一個陪你美質生活、認識環境、
             <br className="hidden sm:block" />
-            一起學習永續生活的環境教育平台
+            一起學習永續生活的資訊平台
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in opacity-0 [animation-delay:400ms]">
