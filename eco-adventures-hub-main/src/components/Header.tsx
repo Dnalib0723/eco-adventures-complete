@@ -22,7 +22,7 @@ const Header = () => {
               <Leaf className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="font-semibold text-lg text-foreground hidden sm:block">
-              臺東縣美質環境資訊網
+              澎湖縣美質環境資訊網
             </span>
           </a>
 

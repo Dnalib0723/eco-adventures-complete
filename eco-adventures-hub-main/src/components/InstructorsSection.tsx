@@ -135,7 +135,7 @@ const InstructorsSection = () => {
                   {/* 地圖插圖 */}
                   <img
                     src="/images/map-illustration.jpg"
-                    alt="臺東縣公廁地圖與環境熱點"
+                    alt="澎湖縣公廁地圖與環境熱點"
                     className="w-full h-full object-contain"
                   />
                 </div>
