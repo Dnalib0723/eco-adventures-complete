@@ -37,7 +37,7 @@ const AboutSection = () => {
             關於我們
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            「臺東縣美質環境資訊網」是一個專注於美質環境資訊與教育推廣的專業網站，
+            「澎湖縣美質環境資訊網」是一個專注於美質環境資訊與教育推廣的專業網站，
             我們致力於整合並提供即將舉辦、正在進行以及過去的美質環境教育課程與活動資訊。
           </p>
           <p className="text-muted-foreground text-lg leading-relaxed mt-4">

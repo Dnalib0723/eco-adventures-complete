@@ -13,13 +13,13 @@ const Footer = () => {
               <Leaf className="w-4 h-4 text-primary-foreground" />
             </div>
             <span className="font-semibold text-foreground">
-              臺東縣美質環境資訊網
+              澎湖縣美質環境資訊網
             </span>
           </div>
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm flex items-center gap-1">
-            © {currentYear} 臺東縣美質環境資訊網 - 用
+            © {currentYear} 澎湖縣美質環境資訊網 - 用
             <Heart className="w-4 h-4 text-destructive inline" />
             守護地球
           </p>
