@@ -4,12 +4,12 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "地址",
-    value: "臺東縣臺東市博愛路 527 號",
+    value: "澎湖縣湖西鄉大城北6-1號",
   },
   {
     icon: Phone,
     label: "電話",
-    value: "089-221-999",
+    value: "06-922-1778",
   },
   {
     icon: Mail,
